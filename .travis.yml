@@ -11,7 +11,6 @@ before_script:
   - docker pull sedden/rpi-raspbian-qemu:wheezy
 
 script:
-  - docker build -t au/test .
-  - docker run -it au/test uname -a
-  - docker run -it au/test go version
-  - docker run -it au/test make check
+  - docker build -t app/test .
+  - docker run -it app/test uname -a
+  - docker run -it au/test python --version

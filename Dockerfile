@@ -3,7 +3,7 @@
 
 FROM sedden/rpi-raspbian-qemu:wheezy
 
-RUN apt-get update && apt-get install -y make golang
-RUN mkdir -p /home/au
-WORKDIR /home/au
-ADD . /home/au
+RUN apt-get update && apt-get install -y python
+RUN mkdir -p /home/app
+WORKDIR /home/app
+ADD . /home/app
