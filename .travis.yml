@@ -13,4 +13,4 @@ before_script:
 script:
   - docker build -t app/test .
   - docker run -it app/test uname -a
-  - docker run -it au/test python --version
+  - docker run -it app/test python --version
