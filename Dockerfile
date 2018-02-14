@@ -1,7 +1,7 @@
 # FROM resin/rpi-raspbian:wheezy
 # COPY qemu-arm-static /usr/bin/qemu-arm-static
 
-FROM sedden/rpi-raspbian-qemu:wheezy
+FROM resin/rpi-raspbian
 
 RUN apt-get update && apt-get install -y python
 RUN mkdir -p /home/app
