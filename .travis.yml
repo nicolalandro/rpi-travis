@@ -14,3 +14,5 @@ script:
   - docker build -t app/test .
   - docker run -it app/test uname -a
   - docker run -it app/test python --version
+  - docker run -it app/test pwd
+  - docker run -it app/test python -m unittest discover -s test --pattern=*.py 1>&2
